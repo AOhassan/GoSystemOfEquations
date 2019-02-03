@@ -113,7 +113,7 @@ func testCases() {
 		fmt.Println(intersectionPoint3)
 	}
 }
-// GET's coefficient inputs from user and finds intersection then returns solution, via POST
+// Get's coefficient inputs from user and finds intersection then returns solution
 func solve(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path != "/" {
 		http.Error(w, "Path not found", http.StatusNotFound)
