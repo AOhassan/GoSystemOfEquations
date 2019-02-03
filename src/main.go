@@ -155,7 +155,7 @@ func solve(w http.ResponseWriter, r *http.Request) {
 		}
 		fmt.Fprintln(w, "Intersection at")
 		fmt.Fprintf(w, "X = %v\n", fmt.Sprintf("%.2f", intersect.x))
-		fmt.Fprintf(w, "Y = %v\n", fmt.Sprintf("%.2f", intersect.x))
+		fmt.Fprintf(w, "Y = %v\n", fmt.Sprintf("%.2f", intersect.y))
 
 	default:
 		fmt.Fprintf(w, "Method not supported")
