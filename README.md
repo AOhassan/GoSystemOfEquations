@@ -1,4 +1,4 @@
-# SystemOfEquation
+# GoSystemOfEquation
 ## Created a RESTFul interface in GoLang which takes two linear equations ( for example ax + by = c , dx + ey = f ) and solves for values x and y
 ### Using Advanced Linear Algebra we can reduce the time complexity to O(1)
 ### convert the system of equations into an augmented Matrix A*x = b
