@@ -1,3 +1,4 @@
+#Docker Config
 FROM golang:latest
 MAINTAINER ahmedhosman@live.com
 RUN mkdir /app
