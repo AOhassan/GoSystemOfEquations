@@ -8,7 +8,7 @@ import (
 	"strconv"
 )
 
-// contains the x/y points
+// contains the x,y points
 type point struct {
 	x float64
 	y float64
