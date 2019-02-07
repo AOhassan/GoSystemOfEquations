@@ -122,7 +122,7 @@ func solve(w http.ResponseWriter, r *http.Request) {
 
 	switch r.Method {
 	case "GET":
-		http.ServeFile(w, r, "src/template/index.html")
+		http.ServeFile(w, r, "template/index.html")
 	case "POST":
 		err := r.ParseForm()
 		if  err != nil {
@@ -167,7 +167,7 @@ func main() {
 	http.HandleFunc("/", solve)
 
 	fmt.Printf("Starting server...\n")
-	err := http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe(":80", nil)
 
 	if err != nil {
 		log.Fatal(err)
